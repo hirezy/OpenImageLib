@@ -58,27 +58,14 @@ allprojects {
 **你可以选择下面三种的其中一种，在module下的build.gradle添加。**
 
 #### A、直接引入完整版（同时支持查看图片和视频）
-
-请注意如果使用以下导入方式，如果你的项目组存在**Glide**请升级至4.12.0或者更高的版本，如果存在**GSYVideoPlayer**请升级至8.3.3或者更高的版本，否则会冲突
-
-```
-//OpenImageFullLib 是完整版，如果您不想自定义图片引擎和视频播放器引擎可直接引用以下库
 implementation 'com.github.hirezy.OpenImageLib:OpenImageFullLib:v1.0.0'
 ```
 #### B、引入只带有图片引擎的版本（只支持查看图片）
-
-请注意如果使用以下导入方式，如果你的项目组存在**Glide**请升级至4.12.0或者更高的版本，否则会冲突
-
-```
-//OpenImageGlideLib 引入Glide（4.12.0）图片引擎,没有引入视频播放器；如需定制视频播放功能，详细看Wiki文档，如果不想定制可直接使用上边的库
 implementation 'com.github.hirezy.OpenImageLib:OpenImageGlideLib:v1.0.0'
 ```
-
 ```
 //OpenImageLib 是基础库，没有引入图片引擎和视频播放器
-//至少需要实现BigImageHelper来定制您的图片引擎，如需定制视频播放功能，详细看Wiki文档
 implementation 'com.github.hirezy.OpenImageLib:OpenImageLib:v1.0.0'
-
 ```
 
 ### 第二步. 简单一步调用即可
@@ -482,7 +469,6 @@ Glide 的混淆规则：
 
 ## 版本限制
 最低SDK版本：minSdkVersion >= 21
-
 - [PhotoView](https://github.com/Baseflow/PhotoView)
 
 
