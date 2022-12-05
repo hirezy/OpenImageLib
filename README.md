@@ -63,7 +63,7 @@ allprojects {
 
 ```
 //OpenImageFullLib 是完整版，如果您不想自定义图片引擎和视频播放器引擎可直接引用以下库
-implementation 'com.github.FlyJingFish.OpenImage:OpenImageFullLib:v1.0.0'
+implementation 'com.github.hirezy.OpenImageLib:OpenImageFullLib:v1.0.0'
 ```
 #### B、引入只带有图片引擎的版本（只支持查看图片）
 
@@ -71,13 +71,13 @@ implementation 'com.github.FlyJingFish.OpenImage:OpenImageFullLib:v1.0.0'
 
 ```
 //OpenImageGlideLib 引入Glide（4.12.0）图片引擎,没有引入视频播放器；如需定制视频播放功能，详细看Wiki文档，如果不想定制可直接使用上边的库
-implementation 'com.github.FlyJingFish.OpenImage:OpenImageGlideLib:v1.0.0'
+implementation 'com.github.hirezy.OpenImageLib:OpenImageGlideLib:v1.0.0'
 ```
 
 ```
 //OpenImageLib 是基础库，没有引入图片引擎和视频播放器
 //至少需要实现BigImageHelper来定制您的图片引擎，如需定制视频播放功能，详细看Wiki文档
-implementation 'com.github.FlyJingFish.OpenImage:OpenImageLib:v1.0.0'
+implementation 'com.github.hirezy.OpenImageLib:OpenImageLib:v1.0.0'
 
 ```
 
@@ -482,18 +482,6 @@ Glide 的混淆规则：
 
 ## 版本限制
 最低SDK版本：minSdkVersion >= 21
-
-## Demo 一览
-
- <img src="/screenshot/Screenshot_20220731_203125_com.flyjingfish.openim.jpg" width="320" alt="show" />
- 
-## [点此下载apk](https://github.com/FlyJingFish/OpenImage/blob/master/apk/release/app-release.apk)
- 
-### 常见问题
-
-##### [点此查看常见问题](https://github.com/FlyJingFish/OpenImage/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
-
-### Thanks
 
 - [PhotoView](https://github.com/Baseflow/PhotoView)
 
