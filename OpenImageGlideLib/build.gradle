@@ -1,0 +1,17 @@
+apply from: "$rootDir/gradle/lib.gradle"
+
+apply from: "$rootDir/gradle/publish.gradle"
+android {
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    api project(path: ':OpenImageLib')
+    //glide
+    api 'com.github.bumptech.glide:glide:4.12.0'
+    api 'com.github.bumptech.glide:annotations:4.12.0'
+    api 'com.github.bumptech.glide:okhttp3-integration:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+}
